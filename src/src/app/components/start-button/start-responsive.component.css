@@ -1,0 +1,9 @@
+
+@media screen and (min-Width:320px) and (max-width:720px){
+  .button-container button{
+    font-size: 1rem;
+    width: 100px;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+}

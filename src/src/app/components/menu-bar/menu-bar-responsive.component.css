@@ -1,0 +1,14 @@
+@media screen and (min-Width:320px) and (max-width:720px){
+  .menu-bar-main li a{
+    font-size: 1rem;
+  }
+  .item-3 a{
+   border-radius: 0px;
+  }
+ .item-4 a{
+  position: static;
+  border-radius: 0px 9px 9px 0px;
+  background: black !important;
+  color: white !important;
+ }
+}

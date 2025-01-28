@@ -1,0 +1,25 @@
+
+.button-container{
+  display: flex;
+  justify-content: center;
+}
+.button-container button{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 8rem;
+  width: 300px;
+  height: 60px;
+  background: #f1f2f454;;
+  border: 5px solid #B1B5B6;
+  border-radius: 9px;
+  -webkit-box-shadow: 4px 3px 47px 10px #101010;
+  -moz-box-shadow: 4px 3px 47px 10px #101010;
+  box-shadow: 4px 3px 47px 10px #101010;
+  transition: 2s;
+}
+.button-container button:hover{
+  background: #101010;
+  color: #fff;
+  cursor: pointer;
+  transition: 2,5s;
+}

@@ -1,0 +1,65 @@
+<div class="share">
+  <!-- Botão de compartilhamento -->
+<button (click)="shareList()" class="share-btn">Compartilhar lista</button>
+
+<!-- Mensagem de status ao compartilhar -->
+<div id="share-result"></div>
+</div>
+
+
+<div class="dinamic-container" *ngFor="let section of sections">
+  <div class="list-title">
+    <h1>{{ capitalizeFirstLetter(section) }}</h1>
+  </div>
+
+
+  <!-- Campo de adição de item -->
+  <button class="add-btn" (click)="addItem(section)">Adicionar</button>
+  <input
+    type="text"
+    [(ngModel)]="newItemText"
+    placeholder="Produto"
+  />
+  <!-- Exibir os itens da seção -->
+  <div class="section-coinatiner" id="{{ section }}">
+    <div *ngFor="let item of lists[section]" class="item-container">
+      <input type="checkbox" />
+      <input
+        type="number"
+        [(ngModel)]="item.quantity"
+        class="quantity"
+        placeholder="Un"
+        min="0"
+        (change)="updateItem(section, item.name, item.quantity, null)"
+      />
+      <label class="item-name">{{ item.name }}</label>
+      <input
+        type="number"
+        [(ngModel)]="item.value"
+        class="value"
+        placeholder="R$"
+        min="0"
+        step="0.01"
+        (change)="updateItem(section, item.name, null, item.value)"
+      />
+
+      <!-- Botão de excluir item -->
+      <button (click)="deleteItem(section, item.name)" class="delete-btn">
+        X
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<!-- Botão para calcular o total geral -->
+<button (click)="calculateTotal()" class="calculate-btn">Calcular Total</button>
+
+<!-- Exibir o total geral -->
+<div id="total-geral">
+  Total Geral: R$ {{ totalGeral | number:'1.2-2' }}
+</div>

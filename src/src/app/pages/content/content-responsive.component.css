@@ -1,0 +1,24 @@
+@media screen and (min-Width:320px) and (max-width:720px){
+  .shopping-container{
+    width: 80%;
+    max-width: 400px;
+    font-size: 1.4rem;
+
+  }
+  .shopping-description ul{
+    font-size: 1.4rem;
+  }
+  .item-01{
+    font-size: 1.5rem;
+  }
+  .item-02{
+    font-size: .7rem;
+    margin: 0;
+    margin-top: -1.5rem;
+  }
+  .item-07{
+    text-align: center;
+    margin: 2rem;
+    font-size: 1.8rem;
+  }
+}

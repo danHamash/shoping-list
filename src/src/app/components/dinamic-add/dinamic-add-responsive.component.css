@@ -1,0 +1,74 @@
+@media screen and (min-Width:320px) and (max-width:720px){
+  :host {
+    width: 100%;
+  }
+
+  label{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 1rem;
+  }
+
+  h1{
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+    margin-top: 3rem;
+    background: rgba(0, 0, 0, 0.473);
+    color: #fff;
+    border: 5px solid #B1B5B6;
+    border-radius: 5px;
+    height: 80px;
+    justify-content: center;
+    align-self: center;
+  }
+
+  input[type="checkbox"]{
+    width: 1rem;
+    height: 1rem;
+  }
+
+  input[type="text"]{
+    width: 200px;
+    max-width: 200px;
+    font-size: 1rem;
+  }
+
+  input[type="number"] {
+    width: 40px;
+    height: 40px;
+    max-width: 200px;
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+  button {
+    font-size: 1rem;
+  }
+  .calculate-btn{
+    width: 200px;
+  }
+  button.delete-btn {
+      font-size: .6rem;
+      margin-left: .5rem;
+      padding: .4rem;
+      width: 30px;
+      height: 30px;
+  }
+
+  button.share-btn {
+    font-size: 1rem;
+  }
+
+  #share-result {
+    font-size: .5rem;
+  }
+
+  #total-geral{
+    font-size: 1rem;
+  }
+
+
+
+}

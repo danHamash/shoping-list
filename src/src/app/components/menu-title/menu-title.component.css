@@ -1,0 +1,13 @@
+.title-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.title-container h1{
+  padding: .5rem;
+  font-size: 3rem;
+  font-weight: bold;
+  background: #f1f2f454;;
+  border: 5px solid #B1B5B6;
+  border-radius: 9px;
+}
